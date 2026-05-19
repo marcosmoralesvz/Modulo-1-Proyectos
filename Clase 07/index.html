@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Generador de Contraseñas</title>
+
+<link rel="stylesheet"
+href="estilos.css">
+
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<h2>
+
+Generador de Contraseñas
+
+</h2>
+
+
+
+<div class="salida">
+
+<input
+type="text"
+id="password"
+readonly>
+
+<button id="copiar">
+
+📋
+
+</button>
+
+</div>
+
+
+
+<div class="panel">
+
+<div class="fila">
+
+<span>
+
+Longitud de caracteres
+
+</span>
+
+<span id="valor">
+
+10
+
+</span>
+
+</div>
+
+
+
+<input
+
+type="range"
+
+id="longitud"
+
+min="8"
+
+max="32"
+
+value="10"
+
+>
+
+
+
+
+<div class="checks">
+
+<label>
+
+<input
+type="checkbox"
+
+id="may"
+
+checked>
+
+Incluir letras mayúsculas
+
+</label>
+
+
+
+<label>
+
+<input
+type="checkbox"
+
+id="min"
+
+checked>
+
+Incluir letras minúsculas
+
+</label>
+
+
+
+<label>
+
+<input
+type="checkbox"
+
+id="num"
+
+checked>
+
+Incluir números
+
+</label>
+
+
+
+<label>
+
+<input
+type="checkbox"
+
+id="sim"
+
+checked>
+
+Incluir símbolos
+
+</label>
+
+
+</div>
+
+
+
+
+
+<div class="seguridad">
+
+<span>
+
+SEGURIDAD
+
+</span>
+
+
+
+<div class="indicador">
+
+<div id="nivel">
+
+MEDIA
+
+</div>
+
+
+
+<div class="barras">
+
+<div class="barra"></div>
+
+<div class="barra"></div>
+
+<div class="barra"></div>
+
+<div class="barra"></div>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<button
+id="generar">
+
+GENERAR →
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
